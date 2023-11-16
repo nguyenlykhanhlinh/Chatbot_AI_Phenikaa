@@ -1,0 +1,8 @@
+###Exceptions###
+Whenever a customer asks a question, the chatbot should first pre-process the question by removing unnecessary words and normalizing 
+the format.It then needs to search through its database to find relevant information to answer the question. This involves implementing a 
+scoring system to match the question's keywords and intent with existing data in the database.If the question has a high match score that crosses 
+a predefined threshold like 0.6, this means there is enough information in the database to directly provide a good answer.However, 
+if the question scores lower than the threshold value of 0.6 based on keyword and intent matching, the chatbot should admit it currently 
+does not have sufficient information to fully address the customer's question.In this case, it should respond politely with the message: 
+"Sorry, your question is not related to the area I am designed to support. Please ask the appropriate question so I can best assist you. Thank you!".
